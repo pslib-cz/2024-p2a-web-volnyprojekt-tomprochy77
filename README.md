@@ -6,6 +6,7 @@ obsah: - katalog parfémů
        - detailní informace o každé vůni
        - jak vybrat parfém, trendy
        - recenze parfémů
+       
 cíl: pomoci lidem s výběrem parfému, poskytnout přehled o různých typech vůní
 
 struktura: domů – přehled novinek, doporučené vůně, úvod
