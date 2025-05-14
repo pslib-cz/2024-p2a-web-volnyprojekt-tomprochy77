@@ -1,6 +1,81 @@
-body {
-    background-color: #D0ABAB;
+@layer reset, layout, fonts, hamburger;
+
+@import url(/src/styles/normalize.css) layer(reset);
+@import url(/src/styles/font.css) layer(fonts);
+@import url(/src/styles/hamburger.css) layer(hamburger);
+
+@layer reset{
+    :root {
+        --background: #D0ABAB;
+        --purple: #5C3D7B;
+        --pink: #FBCBD5;
+        color-scheme: light dark;
+        /* --color: light-dark(var(--gray, #3A3F45), var(--white, #F0F0F0));
+        --background: light-dark(var(--white, #F0F0F0), var(--gray, #3A3F45)); */
+    }
+    html {
+        background-color: var(--background);
+        font-family: "Lora", serif;
+        font-size: 16px;
+    }
 }
-/* h1 {
-    color: #4A276D;
-} */
+
+@layer layout {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: .5rem;
+    }
+    body {
+        background-image: url(/images/header.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 595px;
+    }
+    .main__title {
+        display: flex;
+        font-family: "Playfair Display", serif;
+        justify-content: center;
+        text-align: center;
+        color: #4A276D;
+        font-weight: bold;
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
+    .main {
+        height: 100vh;
+    }
+    .main__content {
+        background-color: var(--pink);
+        margin: 13.35rem 1rem 0 1rem ;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 1px solid black;
+        color: black;
+        text-align: center;   
+    }
+    .main__heading {
+        font-size: 2.25em;
+        font-weight: 400;
+        margin: 0;
+        font-family: "Playfair Display", serif;
+    }
+    .main__heading::after {
+        display: block;
+        content: "";
+        margin: .5rem auto;
+        background-color: black;
+        justify-content: center;
+        width: 172px;
+        height: 1px;
+    }
+    .main__text {
+        margin: 0;
+    }
+}
+
+
+
