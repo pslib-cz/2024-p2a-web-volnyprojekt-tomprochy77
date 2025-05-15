@@ -15,18 +15,18 @@
 </head>
 
 <body>
-    <header class="header ">
-      <img src="/images/logo.svg" alt="logo">
-      <div class="hamburger">
-        <a href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-    </header>
+  <header class="header ">
+    <img src="/images/logo.svg" alt="logo">
+    <div class="hamburger">
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </header>
 
-    <!-- <nav class="nav">
+  <!-- <nav class="nav">
       <menu>
         <li><a href="/src/pages/index.html">Domů</a></li>
         <li><a href="/src/pages/">Katalog a recenze</a></li>
@@ -36,23 +36,83 @@
       </menu>
     </nav> -->
 
-    <main class="main">
+  <main class="main">
+    <header>
       <h1 class="main__title">SVĚT PARFÉMŮ</h1>
+    </header>
+    <section>
       <div class="main__content">
-        <h2 class="main__heading">O nás</h2>
-        <p class="main__text">Objevte různé druhy vůní, inspirujte se recenzemi a najděte parfém, který vám bude sedět.
-        </p>
+        <article class="header__article">
+          <h2 class="main__heading">O nás</h2>
+          <p class="main__text__first">Objevte různé druhy vůní, inspirujte se recenzemi a najděte parfém, který vám
+            bude
+            sedět.</p>
+        </article>
       </div>
-    </main>
-
-
-
-
-
-
-
-
-
+    </section>
+    <section class="main__section">
+      <div class="main__content">
+        <article class="main__article">
+          <h2 class="main__heading">Katalog a recenze</h2>
+          <p class="main__text">
+            Katalog a recenze parfémů vám přináší přehled vůní, detailní informace i osobní hodnocení
+            pro snadnější výběr.</p>
+          <a href="#" class="button">Číst více</a>
+        </article>
+        <img src="/images/katalogarecenze.svg" class="image__responsive" alt="parfém v katalogu">
+      </div>
+      <div class="main__content">
+        <article class="main__article">
+          <h2 class="main__heading">Jak vybrat parfém?</h2>
+          <p class="main__text">
+            Poradíme vám, jak si vybrat parfém, který se k vám bude opravdu hodit – na běžný den i výjimečné chvíle</p>
+          <a href="#" class="button">Číst více</a>
+        </article>
+        <img src="/images/jakvybratparfem.svg" class="image__responsive" alt="parfém v jak vybrat parfém">
+      </div>
+      <div class="main__content">
+        <article class="main__article">
+          <h2 class="main__heading">Galerie</h2>
+          <p class="main__text">
+            Galerie přináší vizuální přehled parfémů, jejich elegantních flakonů a inspirace ze světa vůní.</p>
+          <a href="#" class="button">Číst více</a>
+        </article>
+        <img src="/images/galerie.svg" class="image__responsive" alt="parfém v galerii">
+      </div>
+      <div class="main__content">
+        <article class="main__article">
+          <p class="main__heading">Kontakt</p>
+          <p class="main__text">
+            Máte dotaz nebo se chcete podělit o svůj tip na parfém? Napište nám, rádi vám odpovíme!</p>
+          <a href="#" class="button">Číst více</a>
+        </article>
+        <img src="/images/kontakt.svg" class="image__responsive" alt="parfém v kontaktu">
+      </div>
+    </section>
+    <article class="form">
+      <p class="form__text">Máte dotaz?</p>
+      <form class="form__content">
+        <label for="jmeno">Jméno:</label>
+        <input type="text" class="form__input" placeholder="Zadejte své jméno">
+        <label for="email">Email:</label>
+        <input type="text" class="form__input" placeholder="Zadejte svůj email">
+        <label for="Zpráva">Zpráva:</label>
+        <input type="text" class="form__input" placeholder="Napište nám, co máte na srdci">
+        <a href="#" class="form__button">Odeslat zprávu</a>
+    </article>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li><a href="#">Domů</a></li>
+          <li><a href="#">Katalog a recenze</a></li>
+          <li><a href="#">Jak vybrat parfém</a></li>
+          <li><a href="#">Galerie</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <p class="footer__copy">© 2025 Svět parfémů. Všechna práva vyhrazena</p>
+    </footer>
+  </main>
 
   <script type="module" src="/src/scripts/main.js"></script>
   <script src="/src/scripts/hamburger.js"></script>
