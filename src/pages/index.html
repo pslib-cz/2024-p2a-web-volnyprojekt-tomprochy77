@@ -15,67 +15,71 @@
 </head>
 
 <body>
-  <header class="header ">
-    <img src="/images/logo.svg" alt="logo">
-    <div class="hamburger">
-      <a href="#">
+  <header class="header">
+    <div class="logo">
+      <picture>
+        <img src="/images/logo.svg" alt="logo">
+      </picture>
+      <div class="logo__text">
+        <p class="logo__text__big">Svět parfémů</p>
+        <p class="logo__text__small">Průvodce vůněmi</p>
+      </div>
+    </div>
+    <div class="hamburger-row">
+      <a href="#" class="hamburger hamburger-btn hamburger-zone">
         <span></span>
         <span></span>
         <span></span>
       </a>
     </div>
+    <!-- <nav class="hamburger-nav">
+        <ul>
+            <li>menu item 1</li>
+            <li>menu item 2</li>
+            <li>menu item 3</li>
+            <li>menu item 4</li>
+            <li>menu item 5</li>
+        </ul>
+    </nav> -->
   </header>
 
-  <!-- <nav class="nav">
-      <menu>
-        <li><a href="/src/pages/index.html">Domů</a></li>
-        <li><a href="/src/pages/">Katalog a recenze</a></li>
-        <li><a href="/src/pages/">Jak vybrat parfém?</a></li>
-        <li><a href="/src/pages/">Galerie</a></li>
-        <li><a href="/src/pages/">Kontakt </a></li>
-      </menu>
-    </nav> -->
-
   <main class="main">
-    <header>
-      <h1 class="main__title">SVĚT PARFÉMŮ</h1>
-    </header>
+    <h1 class="main__title">SVĚT PARFÉMŮ</h1>
     <section>
-      <div class="main__content">
-        <article class="header__article">
-          <h2 class="main__heading">O nás</h2>
-          <p class="main__text__first">Objevte různé druhy vůní, inspirujte se recenzemi a najděte parfém, který vám
-            bude
-            sedět.</p>
+      <div class="main__header">
+        <article class="main__article">
+          <p class="main__header__title">Objevte svět vůní, které podtrhnou vaši osobnost.</p>
+          <p class="main__header__text">Prozkoumejte katalog parfémů, přečtěte si recenze a najděte si vůni, která vám
+            bude dokonale sedět – na každý den i výjimečné příležitosti.</p>
         </article>
       </div>
     </section>
     <section class="main__section">
       <div class="main__content">
         <article class="main__article">
-          <h2 class="main__heading">Katalog a recenze</h2>
+          <p class="main__heading">Katalog a recenze</p>
           <p class="main__text">
             Katalog a recenze parfémů vám přináší přehled vůní, detailní informace i osobní hodnocení
             pro snadnější výběr.</p>
-          <a href="#" class="button">Číst více</a>
+          <a href="katalog.html" class="button">Číst více</a>
         </article>
         <img src="/images/katalogarecenze.svg" class="image__responsive" alt="parfém v katalogu">
       </div>
       <div class="main__content">
         <article class="main__article">
-          <h2 class="main__heading">Jak vybrat parfém?</h2>
+          <p class="main__heading">Jak vybrat parfém?</p>
           <p class="main__text">
             Poradíme vám, jak si vybrat parfém, který se k vám bude opravdu hodit – na běžný den i výjimečné chvíle</p>
-          <a href="#" class="button">Číst více</a>
+          <a href="jakvybrat.html" class="button">Číst více</a>
         </article>
         <img src="/images/jakvybratparfem.svg" class="image__responsive" alt="parfém v jak vybrat parfém">
       </div>
       <div class="main__content">
         <article class="main__article">
-          <h2 class="main__heading">Galerie</h2>
+          <p class="main__heading">Galerie</p>
           <p class="main__text">
             Galerie přináší vizuální přehled parfémů, jejich elegantních flakonů a inspirace ze světa vůní.</p>
-          <a href="#" class="button">Číst více</a>
+          <a href="galerie.html" class="button">Číst více</a>
         </article>
         <img src="/images/galerie.svg" class="image__responsive" alt="parfém v galerii">
       </div>
@@ -84,7 +88,7 @@
           <p class="main__heading">Kontakt</p>
           <p class="main__text">
             Máte dotaz nebo se chcete podělit o svůj tip na parfém? Napište nám, rádi vám odpovíme!</p>
-          <a href="#" class="button">Číst více</a>
+          <a href="kontakt.html" class="button">Číst více</a>
         </article>
         <img src="/images/kontakt.svg" class="image__responsive" alt="parfém v kontaktu">
       </div>
@@ -99,6 +103,7 @@
         <label for="Zpráva">Zpráva:</label>
         <input type="text" class="form__input" placeholder="Napište nám, co máte na srdci">
         <a href="#" class="form__button">Odeslat zprávu</a>
+      </form>
     </article>
     <footer class="footer">
       <nav class="footer__nav">

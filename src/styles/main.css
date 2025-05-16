@@ -6,8 +6,9 @@
 
 @layer reset {
     :root {
-        --background: #D0ABAB;
-        --purple: #5C3D7B;
+        --background: #ECD2C8;
+        --primary: #D0ABAB;
+        --purple: #4A276D;
         --pink: #FBCBD5;
         color-scheme: light dark;
         /* --color: light-dark(var(--gray, #3A3F45), var(--white, #F0F0F0));
@@ -25,17 +26,38 @@
     .header {
         display: flex;
         justify-content: space-between;
-        margin: 0;
+        align-items: flex-start;
         padding: .5rem;
     }
 
-    body {
-        background-image: url(/images/header.svg);
+    .logo {
+        display: flex;
+        align-items: flex-start;
+        gap: .25rem;
+    }
+
+    .logo__text {
+        font-family: "Poppins", sans-serif;
+        color: #602961;
+        margin: 0;
+        font-weight: 500;
+        padding: .5rem 0;
+    }
+
+    .logo__text__big {
+        margin: 0;
+        font-size: 1.5em;
+    }
+    .logo__text__small {
+        margin: 0;
+        font-size: .75em;
+    }
+    /* body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         height: 595px;
-    }
+    } */
 
     .main__title {
         display: flex;
@@ -45,7 +67,7 @@
         color: #4A276D;
         font-weight: bold;
         font-size: 3.5rem;
-        margin: 1.5rem 0 13.3rem 0;
+        margin: 1.5rem 1.5rem 2.5rem 1.5rem;
     }
 
     .main {
@@ -66,7 +88,7 @@
         text-align: center;
         background-color: var(--pink);
         gap: .75rem;
-        margin: 3rem 1.25rem 0 1.25rem;
+        margin: 0 1.25rem 3rem 1.25rem;
         border-radius: 1rem;
         border: 1px solid black;
         color: black;
@@ -74,11 +96,8 @@
     }
 
     .main__article {
-        padding: 1rem 1rem 0 1rem;
-    }
-
-    .header__article {
-        padding: 1rem;
+        padding: 1.25rem 1.25rem 0 1.25rem;
+        justify-content: center;
     }
 
     .main__heading {
@@ -91,15 +110,46 @@
         font-family: "Playfair Display", serif;
     }
 
+    .main__header {
+        display: flex;
+        justify-content: center;
+        background-color: var(--purple);
+        color: white;
+        border-radius: 1rem;
+        margin: 0 1.25rem 3rem 1.25rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .main__header__title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.875em;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+
+    .main__header__title::after {
+        display: block;
+        content: "";
+        margin-top: 1rem;
+        background-color: white;
+        width: auto;
+        height: 1px;
+    }
+
+    .main__header__text {
+        margin: 0 auto;
+    }
+
     .main__heading::after {
         display: block;
         content: "";
         margin-top: .75rem;
         margin-bottom: .75rem;
         background-color: black;
-        justify-content: center;
-        width: 300px;
         height: 1px;
+        width: auto;
+        align-self: stretch;
     }
 
     .main__text__first {
@@ -117,7 +167,7 @@
         margin-top: .75rem;
         margin-bottom: .75rem;
         background-color: black;
-        width: 300px;
+        width: auto;
         height: 1px;
     }
 
@@ -125,7 +175,7 @@
         display: inline-block;
         font-family: "Poppins", sans-serif;
         font-size: .75em;
-        background-color: var(--background);
+        background-color: var(--primary);
         color: black;
         border: 0;
         border-radius: .25em;
@@ -146,7 +196,7 @@
         text-align: center;
         background-color: var(--purple);
         padding: 1rem;
-        margin: 3rem 1.25rem 3rem 1.25rem;
+        margin: 0 1.25rem 3rem 1.25rem;
         border-radius: 1rem;
     }
 
@@ -162,6 +212,7 @@
         display: flex;
         flex-direction: column;
         text-align: left;
+        font-weight: bold;
     }
 
     .form__input {
@@ -176,7 +227,7 @@
 
     .form__button {
         text-align: center;
-        background-color: var(--background);
+        background-color: var(--primary);
         text-decoration: none;
         color: black;
         padding: .75em;
