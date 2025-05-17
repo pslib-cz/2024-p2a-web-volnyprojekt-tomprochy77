@@ -26,8 +26,9 @@
     .header {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         padding: .5rem;
+        position: relative;
     }
 
     .logo {
@@ -48,16 +49,20 @@
         margin: 0;
         font-size: 1.5em;
     }
+
     .logo__text__small {
         margin: 0;
         font-size: .75em;
     }
-    /* body {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 595px;
-    } */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
     .main__title {
         display: flex;
@@ -261,5 +266,13 @@
     .footer__copy {
         font-size: .75rem;
         margin: 0;
+    }
+
+    .text__bold {
+        font-weight: bold;
+    }
+
+    .section__header {
+        margin: 2.5rem 0;
     }
 }

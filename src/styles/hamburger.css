@@ -14,8 +14,6 @@
     background-color: var(--purple);
 }
 
-
-
 .hamburger.active span:nth-child(1) {
     translate: 0 14px;
     rotate: 45deg;
@@ -23,7 +21,7 @@
 }
 
 .hamburger.active span:nth-child(2) {
-    transform: translateX(300%);
+    transform: translateX(200%);
     transition: transform .1s;
 }
 
@@ -49,4 +47,31 @@
 
 .hamburger span:nth-child(3) {
     transition: .2s;
+}
+
+.hamburger-nav {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  color: black;
+  border-top: 1px solid black;
+  background: var(--pink);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height .5s ease-in-out, opacity .5s ease-in-out;
+}
+
+
+.hamburger-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.hamburger-nav li {
+    padding: .75em;
+    border-bottom: 1px solid black;
 }
