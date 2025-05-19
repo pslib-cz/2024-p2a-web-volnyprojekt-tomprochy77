@@ -30,10 +30,10 @@
     <nav class="hamburger-nav hamburger-zone">
       <ul>
         <li class="text__bold"><a href="index.html" class="nav__text">Domů</a></li>
-        <li><a href="katalog.html" class="nav__text">Katalog a recenze</a></li>
-        <li><a href="jakvybrat.html" class="nav__text">Jak vybrat parfém</a></li>
+        <li><a href="catalog.html" class="nav__text">Katalog a recenze</a></li>
+        <li><a href="howto.html" class="nav__text">Jak vybrat parfém</a></li>
         <li><a href="galerie.html" class="nav__text">Galerie</a></li>
-        <li><a href="kontakt.html" class="nav__text">Kontakt</a></li>
+        <li><a href="contact.html" class="nav__text">Kontakt</a></li>
       </ul>
     </nav>
   </header>
@@ -49,6 +49,7 @@
         </div>
       </div>
     </section>
+
     <section class="main__section">
       <article class="article__container">
         <div class="main__content">
@@ -56,9 +57,11 @@
           <p class="main__text">
             Katalog a recenze parfémů vám přináší přehled vůní, detailní informace i osobní hodnocení
             pro snadnější výběr.</p>
-          <a href="katalog.html" class="button">Číst více</a>
+          <a href="catalog.html" class="button">Číst více</a>
         </div>
-        <img src="/images/katalogarecenze.svg" class="image__responsive" alt="parfém v katalogu">
+        <figure class="figure">
+          <img src="/images/katalogarecenze.svg" class="image__responsive image" alt="parfém v katalogu">
+        </figure>
       </article>
 
       <article class="article__container">
@@ -68,9 +71,11 @@
             Poradíme vám, jak si vybrat parfém, který se k&nbsp;vám bude opravdu hodit –&nbsp;na běžný den
             i&nbsp;výjimečné chvíle.
           </p>
-          <a href="jakvybrat.html" class="button">Číst více</a>
+          <a href="howto.html" class="button">Číst více</a>
         </div>
-        <img src="/images/jakvybratparfem.svg" class="image__responsive" alt="parfém v jak vybrat parfém">
+        <figure class="figure">
+          <img src="/images/jakvybratparfem.svg" class="image__responsive image" alt="parfém v jak vybrat parfém">
+        </figure>
       </article>
 
       <article class="article__container">
@@ -82,7 +87,9 @@
           </p>
           <a href="galerie.html" class="button">Číst více</a>
         </div>
-        <img src="/images/galerie.svg" class="image__responsive" alt="parfém v galerii">
+        <figure class="figure">
+          <img src="/images/galerie.svg" class="image__responsive image" alt="parfém v galerii">
+        </figure>
       </article>
 
       <article class="article__container">
@@ -91,9 +98,11 @@
           <p class="main__text">
             Máte dotaz nebo se chcete podělit o&nbsp;svůj tip na parfém? Napište nám, rádi vám odpovíme!
           </p>
-          <a href="kontakt.html" class="button">Číst více</a>
+          <a href="contact.html" class="button">Číst více</a>
         </div>
-        <img src="/images/kontakt.svg" class="image__responsive" alt="parfém v kontaktu">
+        <figure class="figure">
+          <img src="/images/kontakt.svg" class="image__responsive image" alt="parfém v kontaktu">
+        </figure>
       </article>
     </section>
     <article class="form">
@@ -108,20 +117,19 @@
         <a href="#" class="form__button">Odeslat zprávu</a>
       </form>
     </article>
-    <footer class="footer">
-      <nav class="footer__nav">
-        <ul class="footer__menu">
-          <li><a href="index.html">Domů</a></li>
-          <li><a href="katalog.html">Katalog a recenze</a></li>
-          <li><a href="jakvybrat.html">Jak vybrat parfém</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <p class="footer__copy white">© 2025 Svět parfémů. Všechna práva vyhrazena</p>
-    </footer>
   </main>
-
+  <footer class="footer">
+    <nav class="footer__nav">
+      <ul class="footer__menu">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="catalog.html">Katalog a recenze</a></li>
+        <li><a href="howto.html">Jak vybrat parfém</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <p class="footer__copy white">© 2025 Svět parfémů. Všechna práva vyhrazena</p>
+  </footer>
   <script type="module" src="/src/scripts/main.js"></script>
   <script src="/src/scripts/hamburger.js"></script>
 </body>
