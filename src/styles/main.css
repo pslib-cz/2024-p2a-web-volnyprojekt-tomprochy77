@@ -7,7 +7,7 @@
 @layer reset {
     :root {
         --background: #D0ABAB;
-        --primary: #ECD2C8;
+        /* --primary: #ECD2C8; zbytecny var*/
         --purple: #4A276D;
         --pink: #FBCBD5;
         color-scheme: light dark;
@@ -81,24 +81,27 @@
         justify-content: center;
     }
 
-    .main__content {
+    .article__container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         text-align: center;
         background-color: var(--pink);
-        gap: .75rem;
-        margin: 0 1.25rem 3rem 1.25rem;
+        /* gap: .75rem; */
+        margin: 0 1.25rem 3rem 1.25rem; 
         border-radius: 1rem;
         border: 1px solid black;
         color: black;
-        align-self: flex-start;
     }
+    
+    .main__content {
+        padding: 1rem ;
+    }
+    
 
     .main__article {
-        padding: 1.25rem 1.25rem 0 1.25rem;
-        justify-content: center;
+        padding: 1.25rem;
     }
 
     .main__heading {
@@ -118,7 +121,6 @@
         color: white;
         border-radius: 1rem;
         margin: 0 1.25rem 3rem 1.25rem;
-        padding-bottom: 1rem;
         text-align: center;
     }
 
@@ -126,13 +128,13 @@
         font-family: "Playfair Display", serif;
         font-size: 1.875em;
         margin: 0;
-        padding-bottom: 1rem;
+        /* padding-bottom: 1rem; */
     }
 
     .main__header__title::after {
         display: block;
         content: "";
-        margin-top: 1rem;
+        margin: 1rem 0;
         background-color: white;
         width: auto;
         height: 1px;
@@ -153,7 +155,7 @@
     .header__nav {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         font-size: 1rem;
         gap: 1rem;
         color: white;
@@ -161,6 +163,7 @@
         padding: 2rem;
         margin: 2.5rem 1.25rem;
         border-radius: 1rem;
+        max-width: 800px;
     }
 
     .nav__text {
@@ -176,8 +179,7 @@
     .main__heading::after {
         display: block;
         content: "";
-        margin-top: .75rem;
-        margin-bottom: .75rem;
+        margin: 1rem 0;
         background-color: black;
         height: 1px;
         width: auto;
@@ -196,8 +198,7 @@
     .main__text::after {
         display: block;
         content: "";
-        margin-top: .75rem;
-        margin-bottom: .75rem;
+        margin: 1rem 0;
         background-color: black;
         width: auto;
         height: 1px;
@@ -222,6 +223,11 @@
         object-fit: cover;
     }
 
+    .image__width {
+        width: 50%;
+        margin: 0 auto;
+    }
+
     .form {
         display: flex;
         flex-direction: column;
@@ -236,6 +242,7 @@
         font-size: 1.875em;
         font-weight: 400;
         padding-bottom: 1em;
+        color: white;
         margin: 0;
         font-family: "Playfair Display", serif;
     }
@@ -257,6 +264,7 @@
         padding: .75em;
         margin: 1em 0 1em 0;
     }
+
 
     .form__button {
         text-align: center;
@@ -302,5 +310,9 @@
 
     .section__header {
         margin: 2.5rem 0;
+    }
+
+    .white {
+        color: white;
     }
 }
