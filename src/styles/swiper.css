@@ -1,0 +1,52 @@
+.swiper {
+    max-width: 600px;
+    background-color: var(--background);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.swiper__text {
+    color: black;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.swiper-slide {
+    padding: 3rem .5rem;
+    box-sizing: border-box;
+}
+
+.swiper__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.swiper__images img {
+    flex-basis: 30%;
+    flex-grow: 1;
+    border-radius: .75rem;
+}
+
+.swiper__images img:nth-child(3) {
+    flex-basis: 90%;
+    flex-grow: 1;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    color: black;
+    font-weight: 900;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: black !important; /*napsat halikovi*/
+}
+
+
+
+
+

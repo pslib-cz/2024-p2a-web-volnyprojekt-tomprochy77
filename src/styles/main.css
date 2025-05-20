@@ -1,8 +1,9 @@
-@layer reset, layout, fonts, hamburger;
+@layer reset, layout, fonts, hamburger, swiper;
 
 @import url(/src/styles/normalize.css) layer(reset);
 @import url(/src/styles/font.css) layer(fonts);
 @import url(/src/styles/hamburger.css) layer(hamburger);
+@import url(/src/styles/swiper.css) layer(swiper);
 
 @layer reset {
     :root {
@@ -224,6 +225,9 @@
         width: 60%;
         margin: 0 auto;
     }
+    .img-big {
+        
+    }
 
     .image {
         width: 100%;
@@ -315,8 +319,13 @@
     .white {
         color: white;
     }
+
     .figure {
         order: -1;
         margin: 0;
+    }
+
+    .menu {
+        list-style-type: none;
     }
 }
