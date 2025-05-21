@@ -29,11 +29,11 @@
     </div>
     <nav class="hamburger-nav hamburger-zone">
       <ul>
-        <li class="text__bold"><a href="index.html" class="nav__text">Domů</a></li>
-        <li><a href="catalog.html" class="nav__text">Katalog a recenze</a></li>
-        <li><a href="howto.html" class="nav__text">Jak vybrat parfém</a></li>
-        <li><a href="galerie.html" class="nav__text">Galerie</a></li>
-        <li><a href="contact.html" class="nav__text">Kontakt</a></li>
+        <a href="index.html" class="text__bold nav__text"><li>Domů</li></a>
+        <a href="catalog.html" class="nav__text"><li>Katalog a recenze</li></a>
+        <a href="howto.html" class="nav__text"><li>Jak vybrat parfém</li></a>
+        <a href="galerie.html" class="nav__text"><li>Galerie</li></a>
+        <a href="contact.html" class="nav__text"><li>Kontakt</li></a>
       </ul>
     </nav>
   </header>
@@ -105,17 +105,24 @@
         </figure>
       </article>
     </section>
-    <article class="form">
+    <article class="form margin">
       <h2 class="form__text">Máte dotaz?</h2>
-      <form class="form__content white">
+      <form id="contakt-form" class="form__content white">
         <label>Jméno:</label>
-        <input type="text" class="form__input" placeholder="Zadejte své jméno">
+        <input type="text" class="form__input" name="jmeno" placeholder="Zadejte své jméno" required
+          oninvalid="this.setCustomValidity('Prosím, zadejte své jméno.')" oninput="this.setCustomValidity('')">
+
         <label>Email:</label>
-        <input type="text" class="form__input" placeholder="Zadejte svůj email">
+        <input type="email" class="form__input" name="email" placeholder="Zadejte svůj email" required
+          oninvalid="this.setCustomValidity('Prosím, zadejte platný e-mail.')" oninput="this.setCustomValidity('')">
+        
         <label>Zpráva:</label>
-        <input type="text" class="form__input" placeholder="Napište nám, co máte na srdci">
-        <a href="#" class="form__button">Odeslat zprávu</a>
+        <input type="text" class="form__input" name="zprava" placeholder="Napište nám, co máte na srdci" required
+          oninvalid="this.setCustomValidity('Prosím, napište zprávu.')" oninput="this.setCustomValidity('')">
+
+        <a href="#" class="form__button" role="button" id="odeslat-btn">Odeslat zprávu</a>
       </form>
+
     </article>
   </main>
   <footer class="footer">
@@ -130,8 +137,9 @@
     </nav>
     <p class="footer__copy white">© 2025 Svět parfémů. Všechna práva vyhrazena</p>
   </footer>
+  <script type="module" src="/src/scripts/form.js"></script>
   <script type="module" src="/src/scripts/main.js"></script>
-  <script src="/src/scripts/hamburger.js"></script>
+  <script type="module" src="/src/scripts/hamburger.js"></script>
 </body>
 
 </html>
