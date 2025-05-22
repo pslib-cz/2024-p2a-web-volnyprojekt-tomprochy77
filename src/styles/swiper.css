@@ -3,16 +3,13 @@
 @import url(swiper/css/pagination);
 
 :root {
-    /* --swiper-gap: 2.5rem; */
     --swiper-display: grid;
-    /* --swiper-theme-color: black; */
     --swiper-pagination-color: black;
     --swiper-pagination-bullet-inactive-color: #464646;
     --swiper-pagination-bullet-inactive-opacity: .4;
     --swiper-pagination-bullet-size: .75rem;
     --swiper-pagination-bullet-horizontal-gap: .25rem;
     --swiper-navigation-size: 3.25rem;
-    /* --swiper-navigation-sides-offset: 0; */
 }
 
 .swiper {
@@ -55,7 +52,8 @@
     flex-grow: 1;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
     color: black;
     font-weight: 900;
 }

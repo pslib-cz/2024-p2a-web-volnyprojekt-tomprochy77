@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('contakt-form');
-  const btn = document.getElementById('odeslat-btn');
+  const form = document.getElementById('contact-form');
+  const btn = document.getElementById('send-btn');
 
   if (btn && form) {
     btn.addEventListener('click', function (event) {

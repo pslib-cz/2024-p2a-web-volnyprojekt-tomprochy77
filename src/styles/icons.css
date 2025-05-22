@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/icons/icomoon.eot?nybqy7');
-  src:  url('/icons/icomoon.eot?nybqy7#iefix') format('embedded-opentype'),
+  src: url('/icons/icomoon.eot?nybqy7');
+  src: url('/icons/icomoon.eot?nybqy7#iefix') format('embedded-opentype'),
     url('/icons/icomoon.ttf?nybqy7') format('truetype'),
     url('/icons/icomoon.woff?nybqy7') format('woff'),
     url('/icons/icomoon.svg?nybqy7#icomoon') format('svg');
@@ -25,15 +25,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icons {
+  font-size: 3rem;
+  color: var(--purple);
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
 .icon-x:before {
   content: "\e900";
 }
+
 .icon-facebook:before {
   content: "\ea90";
 }
+
 .icon-instagram:before {
   content: "\ea92";
 }
+
 .icon-youtube:before {
   content: "\ea9d";
 }
