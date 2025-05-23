@@ -10,7 +10,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -26,10 +27,15 @@
 }
 
 .icons {
+  margin-bottom: 2rem;
+}
+
+.icon {
   font-size: 3rem;
   color: var(--purple);
   text-decoration: none;
   padding: 0 1rem;
+
 }
 
 .icon-x:before {
