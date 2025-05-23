@@ -88,7 +88,7 @@
 
     .nav__link--bold {
         font-weight: bold;
-        margin: .25rem 0;
+        margin: 0;
     }
 
     .main {
@@ -106,6 +106,13 @@
         margin: 1.5rem 1.5rem 2.5rem 1.5rem;
     }
 
+    .main__section__contact { /*contact*/
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 520px));
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        gap: 2rem;
+    }
     .main__intro {
         background-color: var(--purple);
         color: white;
@@ -113,9 +120,6 @@
         text-align: center;
         max-width: 600px;
         margin: 3rem auto;
-    }
-
-    .main__intro-content {
         padding: 1.25rem;
     }
 
@@ -194,6 +198,26 @@
         height: 1px;
     }
 
+    .header__text { /*catalog*/
+        font-family: "Raleway", sans-serif;
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 600;
+        color: black;
+        margin: 0 auto;
+    }
+
+    .header__nav { /*catalog*/
+        display: grid;
+        gap: 1rem;
+        color: white;
+        background-color: var(--purple);
+        padding: 2rem;
+        margin: 2.5rem auto;
+        border-radius: 1rem;
+        max-width: 600px;
+    }
+
     .button {
         display: inline-block;
         font-family: "Poppins", sans-serif;
@@ -218,6 +242,11 @@
         object-fit: cover;
         margin: 0;
         padding: 0;
+    }
+
+    .image__width { /*catalog*/
+        width: 60%;
+        margin: 0 auto;
     }
 
     .card__image-wrapper {
@@ -276,6 +305,7 @@
         padding: .75em;
         margin: 1em auto;
         border-radius: .25em;
+        border: 0;
         transition: font-size 0.2s ease-in-out;
     }
 
@@ -334,13 +364,6 @@
 
 
 
-    .main__section__contact {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 520px));
-        grid-template-rows: 1fr 1fr;
-        justify-content: center;
-        gap: 2rem;
-    }
 
     .gap {
         margin-bottom: 2rem;
@@ -351,25 +374,7 @@
 
 
 
-    .header__text {
-        font-family: "Raleway", sans-serif;
-        text-align: center;
-        font-size: 2.25rem;
-        font-weight: 600;
-        color: black;
-        margin: 0 auto;
-    }
 
-    .header__nav {
-        display: grid;
-        gap: 1rem;
-        color: white;
-        background-color: var(--purple);
-        padding: 2rem;
-        margin: 2.5rem auto;
-        border-radius: 1rem;
-        max-width: 600px;
-    }
 
     li a {
         text-decoration: none;
@@ -392,10 +397,6 @@
 
 
 
-    .image__width {
-        width: 60%;
-        margin: 0 auto;
-    }
 
     .img-small {
         min-width: 200px;
@@ -462,6 +463,14 @@
 
         .form__submit {
             grid-column: span 2;
+        }
+    }
+    @media (min-width: 1305px) {
+        .header__nav {
+            display: none;
+        }
+        .main__section {
+            padding: 3rem 0;
         }
     }
 }
