@@ -337,11 +337,6 @@
    
     .mapa { /*contact*/
         border-radius: 1rem;
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .mapa:hover {
-        transform: scale(1.04);
     }
 
     .footer {
